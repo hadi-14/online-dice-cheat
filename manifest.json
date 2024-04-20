@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "online-dice.com cheat",
+  "version": "1.4.1",
+  "description": "To cheat online-dice.com just install it. Note:it only works on color dice",
+  "author": "Hadi-14",
+  "permissions": ["activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.online-dice.com/roll-color-dice/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  }
+}
